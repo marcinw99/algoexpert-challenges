@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .nav {
+                text-align: center;
+                background: #4F4D53;
+                color: #fff;
+            }
+            .nav__container {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 48px;
+                width: 70vw;
+            }
+            .nav__search {
+                display: flex;
+                align-items: center;
+
+                background: #353337;
+            }
+            .nav__search__icon-wrapper {
+                padding: 4px;
+            }
+            .nav__search__input {
+                background: #353337;
+                border: none;
+            }
+            .hero {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 400px;
+                background: url("media/img_hero.jpg");
+                background-size: contain;
+            }
+            .hero__title {
+                color: #4f4d52;
+                font-size: 3rem;
+            }
+            .people {
+                position: relative;
+                text-align: center;
+            }
+            .people__container {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: relative;
+                width: 70vw;
+
+                display: flex;
+                justify-content: space-between;
+            }
+            .people__image {
+                border-radius: 50%;
+            }
+            .main {
+                text-align: center;
+            }
+            .main__title {
+                font-size: 2rem;
+                color: #E8BE02;
+            }
+            .main__description {
+                margin: 2rem auto;
+                width: 60%;
+                min-width: 600px;
+            }
+            .people-details {
+                margin: 4rem auto;
+                width: 60%;
+                min-width: 600px;
+
+                display: flex;
+                justify-content: space-around;
+            }
+            .people-details__person {
+                display: flex;
+            }
+            .people-details__person__image {
+                border-radius: 50%;
+            }
+            .people-details__person__description {
+                padding-left: 1.5rem;
+                text-align: left;
+            }
+            .people-details__person__description__name {
+                margin: 10px 0 0 0;
+                color: #E8BE02;
+                font-weight: bold;
+            }
+            .people-details__person__description__contact {
+                margin: 0;
+            }
+            .footer-decoration {
+                min-height: 12px;
+                background: #E8BE02
+            }
+            .footer {
+                text-align: center;
+                background: #4F4D53;
+                color: white;
+            }
+            .footer__content {
+                width: 70vw;
+                display: inline-flex;
+                justify-content: space-between;
+            }
+            .footer__section__title {
+                color: #E8BE02;
+            }
+            .footer__section__element {
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav__container">
+                <img src="media/gtd_logo.png" alt="gtd logo" class="nav__logo" />
+                <div class="nav__search">
+                    <div class="nav__search__icon-wrapper">
+                        <img src="media/ic_search.png" alt="search icon" class="nav__search__icon">
+                    </div>
+                    <input type="text" class="nav__search__input" placeholder="Search">
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1 class="hero__title">Hello, we’re gtd.</h1>
+        </div>
+        <div class="people">
+            <div class="people__container">
+                <img class="people__image" src="media/img_lisa.jpg" alt="lisa">
+                <img class="people__image" src="media/img_danielle.jpg" alt="danielle">
+                <img class="people__image" src="media/img_brian.jpg" alt="brian">
+            </div>
+        </div>
+        <main class="main">
+            <h2 class="main__title">How it started</h2>
+            <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n
+             isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c
+             ulpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="people-details">
+                <div class="people-details__person">
+                    <img class="people-details__person__image" src="media/img_lisa.jpg" alt="lisa" width="60px" height="60px">
+                    <div class="people-details__person__description">
+                        <p class="people-details__person__description__name">Lisa</p>
+                        <p class="people-details__person__description__contact">lisa@gtd.co</p>
+                    </div>
+                </div>
+                <div class="people-details__person">
+                    <img class="people-details__person__image" src="media/img_danielle.jpg" alt="danielle" width="60px" height="60px">
+                    <div class="people-details__person__description">
+                        <p class="people-details__person__description__name">Danielle</p>
+                        <p class="people-details__person__description__contact">danielle@gtd.co<br>(123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="footer-decoration"></div>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <section class="footer__section">
+                    <h3 class="footer__section__title">Team</h3>
+
+                    <h4 class="footer__section__element">Lisa</h4>
+                    <h4 class="footer__section__element">Danielle</h4>
+                    <h4 class="footer__section__element">Brian</h4>
+                    <h4 class="footer__section__element">Join us!</h4>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__section__title">Learn More</h3>
+                    <h4 class="footer__section__element">Manifesto</h4>
+                    <h4 class="footer__section__element">Works</h4>
+                    <h4 class="footer__section__element">Stories</h4>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__section__title">Meet Us</h3>
+                    <h4 class="footer__section__element">Studio</h4>
+                    <h4 class="footer__section__element">Community</h4>
+                    <h4 class="footer__section__element">Workshops</h4>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__section__title">Contact</h3>
+                    <h4 class="footer__section__element">Twitter</h4>
+                    <h4 class="footer__section__element">Facebook</h4>
+                    <h4 class="footer__section__element">Instagram</h4>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
